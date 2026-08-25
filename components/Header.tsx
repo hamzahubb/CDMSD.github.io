@@ -2,10 +2,10 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { Menu, X } from 'lucide-react';
 import WorkWithUsModal from './WorkWithUsModal';
+import CdmsdLogo from './CdmsdLogo';
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -27,13 +27,9 @@ export default function Header() {
     <>
       <header className="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-200">
         <div className="max-w-[1240px] mx-auto px-6 h-20 flex items-center justify-between">
-          {/* Official Brand Logo */}
+          {/* Guaranteed Inline SVG Official Brand Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-            <img
-              src="/assets/images/cdmsd-logo.svg"
-              alt="Center for Disaster Management & Sustainable Development (CDMSD)"
-              className="h-12 w-auto max-w-[280px] object-contain"
-            />
+            <CdmsdLogo className="h-12 w-auto max-w-[280px]" variant="dark" />
           </Link>
 
           {/* Desktop Navigation */}

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { Mail, Phone, MapPin } from 'lucide-react';
 import { ORG_DATA } from '@/lib/data';
+import CdmsdLogo from './CdmsdLogo';
 
 export default function Footer() {
   return (
@@ -10,11 +11,7 @@ export default function Footer() {
           {/* Brand Col with Logo */}
           <div>
             <div className="bg-white p-3 rounded-lg w-fit mb-4">
-              <img
-                src="/assets/images/cdmsd-logo.svg"
-                alt="Center for Disaster Management & Sustainable Development"
-                className="h-10 w-auto"
-              />
+              <CdmsdLogo className="h-10 w-auto" variant="dark" />
             </div>
             <p className="text-sm leading-relaxed text-white/70 mb-4">
               A registered independent multidisciplinary consulting firm established in Pakistan in 2013, providing specialized services in disaster risk management, climate adaptation, WASH, and sustainable development.

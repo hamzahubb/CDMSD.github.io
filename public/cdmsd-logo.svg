@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 120" width="100%" height="100%">
+  <!-- CDMSD 3-Cube Isometric Emblem -->
+  <g transform="translate(10, 10)">
+    <!-- Top Amber/Orange Cube -->
+    <g transform="translate(48, 28)">
+      <!-- Top Face -->
+      <polygon points="0,-24 20.78,-12 0,0 -20.78,-12" fill="#fbbf24" />
+      <!-- Left Face -->
+      <polygon points="-20.78,-12 0,0 0,24 -20.78,12" fill="#f59e0b" />
+      <!-- Right Face -->
+      <polygon points="0,0 20.78,-12 20.78,12 0,24" fill="#f97316" />
+    </g>
+
+    <!-- Bottom-Left Green Cube -->
+    <g transform="translate(24, 70)">
+      <!-- Top Face -->
+      <polygon points="0,-24 20.78,-12 0,0 -20.78,-12" fill="#a3e635" />
+      <!-- Left Face -->
+      <polygon points="-20.78,-12 0,0 0,24 -20.78,12" fill="#84cc16" />
+      <!-- Right Face -->
+      <polygon points="0,0 20.78,-12 20.78,12 0,24" fill="#65a30d" />
+    </g>
+
+    <!-- Bottom-Right Cyan/Blue Cube -->
+    <g transform="translate(72, 70)">
+      <!-- Top Face -->
+      <polygon points="0,-24 20.78,-12 0,0 -20.78,-12" fill="#38bdf8" />
+      <!-- Left Face -->
+      <polygon points="-20.78,-12 0,0 0,24 -20.78,12" fill="#0ea5e9" />
+      <!-- Right Face -->
+      <polygon points="0,0 20.78,-12 20.78,12 0,24" fill="#0284c7" />
+    </g>
+  </g>
+
+  <!-- Vertical Divider Line -->
+  <line x1="118" y1="20" x2="118" y2="100" stroke="#CBD5E1" stroke-width="1.5" />
+
+  <!-- Typography Text -->
+  <g font-family="'Inter', 'Arial Black', sans-serif" font-weight="900" fill="#123047">
+    <text x="135" y="44" font-size="16" letter-spacing="0.5px">CENTER FOR</text>
+    <text x="135" y="68" font-size="16" letter-spacing="0.5px">DISASTER MANAGEMENT &amp;</text>
+    <text x="135" y="92" font-size="16" letter-spacing="0.5px">SUSTAINABLE DEVELOPMENT</text>
+  </g>
+</svg>

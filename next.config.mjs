@@ -3,8 +3,12 @@ const isGithubActions = process.env.GITHUB_ACTIONS || false;
 let repo = '';
 
 if (isGithubActions) {
-  const repoName = process.env.GITHUB_REPOSITORY?.split('/')[1] || '';
-  if (repoName && !repoName.endsWith('.github.io')) {
+  const fullRepo = process.env.GITHUB_REPOSITORY || ''; // e.g. "hamzahubb/CDMSD.github.io"
+  const [owner, repoName] = fullRepo.split('/');
+  
+  // Only a repo named exactly "<owner>.github.io" is at root "/".
+  // Any other repo (including "CDMSD.github.io") is served at "/<repoName>/".
+  if (owner && repoName && repoName.toLowerCase() !== `${owner.toLowerCase()}.github.io`) {
     repo = `/${repoName}`;
   }
 }
